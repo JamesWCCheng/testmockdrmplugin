@@ -26,3 +26,7 @@ cd system/bin/
 
 You can see the logs on both adb logcat and console.
 
+The test code is translated from 
+https://android.googlesource.com/platform/cts/+/kitkat-release/tests/tests/media/src/android/media/cts/MediaDrmMockTest.java
+
+
