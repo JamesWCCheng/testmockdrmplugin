@@ -12,17 +12,17 @@ adb push out/target/product/hammerhead/system/lib/libmediaplayerservice.so /syst
 
 # Build the exe
 ##switch to /B2G_Nexus5/
-./build.sh testserve
+./build.sh testserver
 
 testserver is the module name in Android.mk 
 
 ## When build success, put the exe to device or dev-board
-adb remoun
+adb remount
 
 adb push out/target/product/hammerhead/system/bin/testserver /system/bin
 
 ## Execute the exe
-adb shel
+adb shell
 
 cd system/bin
 
