@@ -12,16 +12,20 @@ adb push out/target/product/hammerhead/system/lib/libmediaplayerservice.so /syst
 
 # Build the exe
 ##switch to /B2G_Nexus5/
-./build.sh testserver
+./build.sh testserve
+
 testserver is the module name in Android.mk 
 
 ## When build success, put the exe to device or dev-board
-adb remount
+adb remoun
+
 adb push out/target/product/hammerhead/system/bin/testserver /system/bin
 
 ## Execute the exe
-adb shell
-cd system/bin/
+adb shel
+
+cd system/bin
+
 ./testserver
 
 You can see the logs on both adb logcat and console.
